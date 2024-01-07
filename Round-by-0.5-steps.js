@@ -17,3 +17,5 @@ solution(4.75) == 5
 function solution(n) {
   return Math.round(n*2)/2;
 }
+
+// or
