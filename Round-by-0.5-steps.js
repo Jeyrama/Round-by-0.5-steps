@@ -19,3 +19,18 @@ function solution(n) {
 }
 
 // or
+
+function solution(n){
+  let flooredNum = Math.floor(n);
+  let difference = n - flooredNum;
+  console.log(difference)
+
+  if(difference < 0.25)
+  	return flooredNum;
+  else if(difference == 0.5)
+  	return n;
+  else if((difference > 0.25 && difference < 0.5) || (difference > 0.5 && difference < 0.75))
+  	return flooredNum + 0.5;
+  else 
+  	return flooredNum +1;
+}
